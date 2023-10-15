@@ -186,6 +186,13 @@ body {
     position: absolute;
     left: 0;
 }
+
+@media screen and (min-width: 1120px) {
+    .title-h1 {
+        float: left;
+        margin-bottom: 0;
+    }
+}
 /* /.title-h1 */
 
 /* .horizontal-nav */
@@ -243,3 +250,43 @@ body {
     border: 2px solid #B8FFEC;
 }
 /* /.nav-item */
+
+/* .menu-desktop */
+.menu-desktop--hidden {
+    display: none;
+}
+
+.menu-desktop__item {
+    margin-right: 2rem;
+}
+
+.menu-desktop__item:last-child {
+    margin-right: 0;
+}
+
+.menu-desktop {
+    justify-content: end;
+    padding-right: 1rem;
+}
+
+@media screen and (min-width: 1120px) {
+    .menu-desktop {
+        display: flex;
+    }
+}
+/* /.menu-desktop */
+
+/* .menu-icon-item */
+.menu-icon-item {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #1B1C21;
+    font-family: 'TT Lakes', 'Helvetica', sans-serif;
+    text-decoration: none;
+}
+
+.menu-icon-item__icon {
+    margin-left: 0.5rem;
+}
+/* /.menu-icon-item */
