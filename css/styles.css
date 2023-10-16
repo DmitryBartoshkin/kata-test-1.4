@@ -296,6 +296,7 @@ body {
 /* .main-content */
 .main-content {
     padding: 0 1rem;
+    padding-top: 2rem;
     display: flex;
 }
 
@@ -322,6 +323,31 @@ body {
         width: 110%;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .main-content__image {
+        width: 50%;
+    }
+
+    .main-content__content {
+        width: 50%;
+    }
+
+    .main-content__text {
+        max-height: 160px;
+        overflow: hidden;
+        padding-right: 3rem;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .main-content__text {
+        max-height: none;
+        overflow: auto;
+        padding-right: 2.25rem;
+    }
+}
+
 /* .text-content */
 .text-content {
     font-size: .875rem;
@@ -329,6 +355,12 @@ body {
     color: #1B1C21;
     letter-spacing: .2px;
     font-family: 'TT Lakes', 'Helvetica', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    .text-content {
+        line-height: 1.3rem;
+    }
 }
 /* /.text-content */
 
@@ -351,6 +383,7 @@ body {
     padding: 1rem;
     padding-left: 1.5rem;
     text-decoration: none;
+    display: block;
 }
 
 .read-more::before {
