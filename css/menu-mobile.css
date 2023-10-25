@@ -93,3 +93,48 @@ body {
     background-image: url('../img/search-icon.svg');
 }
 /* /.link-icon */
+
+/* .menu-mobile-nav */
+.menu-mobile-nav__list {
+    padding: 0;
+}
+/* /.menu-mobile-nav */
+
+/* .vertical-nav */
+.vertical-nav {
+    list-style: none;
+}
+
+.vertical-nav__item {
+    padding: 1rem 1.5rem;
+}
+
+.vertical-nav__link {
+    font-family: 'TT Lakes', 'Helvetica', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.2px;
+    font-weight: normal;
+    color: #1B1C21;
+    text-decoration: none;
+    position: relative;
+}
+
+.vertical-nav__link:hover {
+    color: #7E7E82;
+}
+
+.vertical-nav__link--active {
+    color: #7E7E82;
+}
+
+.vertical-nav__link--active::before {
+    content: ' ';
+    width: 4px;
+    height: 32px;
+    position: absolute;
+    left: -1.5rem;
+    top: -0.3rem;
+    background-color: #41F6D7;
+}
+/* /.vertical-nav */
