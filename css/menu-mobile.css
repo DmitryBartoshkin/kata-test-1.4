@@ -166,6 +166,16 @@ body {
     top: -0.3rem;
     background-color: #41F6D7;
 }
+
+.vertical-nav__link:hover::before {
+    content: ' ';
+    width: 4px;
+    height: 32px;
+    position: absolute;
+    left: -1.5rem;
+    top: -0.3rem;
+    background-color: #41F6D7;
+}
 /* /.vertical-nav */
 
 /* .menu-mobile-footer */
